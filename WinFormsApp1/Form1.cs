@@ -69,6 +69,34 @@ namespace WinFormsApp1
             {
                 MessageBox.Show("El nombre seleccionado es: " + nombre_persona + " en la posicion: " + (lbNombres.SelectedIndex + 1));
             }
+
+            //SIRVE PARA SEPARAR CADENA DE CARACTERES
+            string ejemplo1 = "Joel - Maria - Sofia";
+            string p1 = ejemplo1.Split('-')[0]; // devuelve joel
+            string p2 = ejemplo1.Split('-')[1]; // devuelve maria
+            string p3 = ejemplo1.Split('-')[2]; // devuelve sofia
+
+            MessageBox.Show(p1);
+            MessageBox.Show(p2);
+            MessageBox.Show(p3);
+
+
+            //comparar si son el mismo nombre
+            string p4 = "ARIEL";
+            string p5 = "aRiEl";
+
+            if (p4.ToUpper() == p5.ToUpper())
+            {
+                MessageBox.Show("Son el mismo nombre");
+            }
+            else
+            {
+                MessageBox.Show("Son nombres diferentes");
+            }
+
+            //reemplazar en nombre
+            string p6 = "ARIEL".Replace('A', 'Y');
+            MessageBox.Show(p6);
         }
     }
 }
