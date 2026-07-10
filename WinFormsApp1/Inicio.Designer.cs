@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class Form1
+    partial class Inicio
     {
         /// <summary>
         ///  Required designer variable.
@@ -38,6 +38,7 @@
             btn_aceptar = new Button();
             lbNombres = new ListBox();
             btn_mostrar = new Button();
+            btn_cambio_video4 = new Button();
             SuspendLayout();
             // 
             // lblProde
@@ -138,11 +139,22 @@
             btn_mostrar.UseVisualStyleBackColor = true;
             btn_mostrar.Click += btn_mostrar_Click;
             // 
-            // Form1
+            // btn_cambio_video4
+            // 
+            btn_cambio_video4.Location = new Point(1071, 500);
+            btn_cambio_video4.Name = "btn_cambio_video4";
+            btn_cambio_video4.Size = new Size(75, 23);
+            btn_cambio_video4.TabIndex = 10;
+            btn_cambio_video4.Text = "Video4";
+            btn_cambio_video4.UseVisualStyleBackColor = true;
+            btn_cambio_video4.Click += this.btn_cambio_video4_Click_1;
+            // 
+            // Inicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1229, 566);
+            Controls.Add(btn_cambio_video4);
             Controls.Add(btn_mostrar);
             Controls.Add(lbNombres);
             Controls.Add(btn_aceptar);
@@ -153,9 +165,9 @@
             Controls.Add(lbl_ingreso_nombre);
             Controls.Add(lblSofi);
             Controls.Add(lblProde);
-            Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
+            Name = "Inicio";
+            Text = "Inicio";
+            Load += Inicio_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -172,5 +184,6 @@
         private Button btn_aceptar;
         private ListBox lbNombres;
         private Button btn_mostrar;
+        private Button btn_cambio_video4;
     }
 }

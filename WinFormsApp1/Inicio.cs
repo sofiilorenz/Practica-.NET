@@ -1,13 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
 namespace WinFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Inicio : Form
     {
-        public Form1()
+        public Inicio()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Inicio_Load(object sender, EventArgs e)
         {
             //este evento se produce una unica vez al ejecutar el form
 
@@ -97,6 +104,13 @@ namespace WinFormsApp1
             //reemplazar en nombre
             string p6 = "ARIEL".Replace('A', 'Y');
             MessageBox.Show(p6);
+        }
+
+        private void btn_cambio_video4_Click_1(object sender, EventArgs e)
+        {
+            Video4 video4 = new Video4();
+            video4.Show();
+            this.Hide();
         }
     }
 }
